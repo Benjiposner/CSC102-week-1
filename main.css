@@ -1,0 +1,51 @@
+/*  selector{
+
+property1: value1;
+
+property2:value2;
+
+property3:value3;
+
+}*/
+body{
+   background-image: radial-gradient(blue, rgb(0, 255, 85), rgb(187, 210, 13));
+   height: 768px;
+   width: 1430px;
+   text-align: center;
+}
+
+nav{
+    height: 600px;
+    width: 500px;
+    float: center;
+    padding: 5px;
+    line-height: 30px;
+} 
+ footer{
+    text-align: center;
+    margin-right: 275px;
+    width: 1430px;
+
+ }
+ 
+ #memeImage{ 
+    margin-right: 0px;
+    width: 450px;
+    height: 350px;
+
+ }
+ h1{
+    text-align: center;
+    height: 100px;
+    width: 1430px;
+ }
+
+ button
+{
+background-color: rgb(217, 12, 12);
+border-color: rgb(224, 104, 7);
+border-radius: 50px;
+width: 100px;
+height: 50px;
+
+}
