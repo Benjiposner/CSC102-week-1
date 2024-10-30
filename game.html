@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Enables responsive design for various screen sizes -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Ensures compatibility with Internet Explorer's latest rendering engine -->
+    <title>Online War</title> <!-- Title of the page displayed in the browser tab -->
+    
+    <!-- Importing the game script as a module and the main stylesheet -->
+    <script src="gamescript.js" type="module"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Elements for displaying computer's deck and card during gameplay -->
+    <div class="computer-deck deck"></div> <!-- Computer's deck counter -->
+    <div class="computer-card-slot card-slot"></div> <!-- Computer's current card slot -->
+    
+    <div class="text"></div> <!-- Text element for displaying game messages -->
+
+    <!-- Elements for displaying player's deck and card during gameplay -->
+    <div class="player-deck deck"></div> <!-- Player's deck counter -->
+    <div class="player-card-slot card-slot"></div> <!-- Player's current card slot -->
+
+    <!-- Button to start the "War" game round -->
+    <button onclick="warFunc()">Play War</button>
+    
+    <!-- Spacer elements for layout adjustment -->
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- Navigation buttons to link to other pages -->
+    <a href="http://127.0.0.1:5500/Boards.html">
+        <button>Boards</button>
+    </a><br>
+    <a href="http://127.0.0.1:5500/index.html">
+        <button>Index</button>
+    </a>
+</body>
+</html>
