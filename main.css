@@ -1,18 +1,5 @@
-/* Universal selector for all elements and their ::before and ::after pseudo-elements to set box-sizing to border-box, ensuring padding and border are included in element dimensions. */
-*,
-*::after,
-*::before { 
-   box-sizing: border-box;
-}
-
 /* Styling for body element to center the content using CSS grid layout, add background, and set overall dimensions and appearance. */
 body {
-   margin: 0; /* Removes default margin */
-   display: grid; /* Enables grid layout */
-   gap: .5rem; /* Spacing between grid items */
-   cursor: pointer; /* Sets cursor style for the body */
-   justify-content: center; /* Centers content horizontally */
-   padding-top: 1rem; /* Adds padding at the top */
    background-image: radial-gradient(blue, rgb(0, 255, 85), rgb(187, 210, 13)); /* Radial gradient background */
    height: 768px; /* Fixed height */
    width: 1430px; /* Fixed width */
@@ -58,79 +45,14 @@ button {
     height: 50px;
 }
 
-/* Styles for deck elements, setting size, border, alignment, font size, and preventing text selection. */
-.deck {
-   height: 100%;
-   width: 100%;
-   border: 1px solid black;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 3rem; /* Large font size for card count */
-   border-radius: .5rem; /* Rounded corners */
-   color: white;
-   user-select: none; /* Disables text selection */
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto; /*along with margin-left auto it will center the circle*/
+    text-align: center;
 }
 
-/* Specific background color for computer's deck element. */
-.computer-deck {
-   background-color: green;
 }
-
-/* Specific background color for player's deck element. */
-.player-deck {
-   background-color: blue;
-}
-
-/* Styles for the text element to span both columns in the grid and center-align content. */
-.text {
-   grid-column: span 2; /* Spans across both columns */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-/* General card styling with positioning, size, border, font size, and alignment. */
-.card {
-   position: relative;
-   height: 100%;
-   width: 100%;
-   border: 1px solid black;
-   border-radius: .5rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 4rem; /* Large font size for card value */
-}
-
-/* Color for cards with a "red" class. */
-.card.red {
-   color: red;
-}
-
-/* Color for cards with a "black" class. */
-.card.black {
-   color: black;
-}
-
-/* Styles for ::before and ::after pseudo-elements to display card value in the corners of the card. */
-.card::before,
-.card::after {
-   position: absolute;
-   content: attr(data-value); /* Uses data-value attribute to display card value */
-   font-size: 1rem;
-}
-
-/* Positioning for top-left corner of the card. */
-.card::before {
-   top: .5rem;
-   left: .5rem;
-}
-
-/* Positioning for bottom-right corner of the card, rotated for mirror effect. */
-.card::after {
-   bottom: .5rem;
-   right: .5rem;
-   transform: rotate(180deg); /* Flips text upside-down */
-}
-
