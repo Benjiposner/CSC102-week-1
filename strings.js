@@ -17,17 +17,18 @@ function validate() {
     }
 
     // Check if empNum is exactly 3 digits
-    if (empNum < 100 || empNum >= 1000) {
+    else if (empNum < 100 || empNum >= 1000) {
         document.getElementById("inputStatus").innerHTML = "number is not 3 digits";
         return; // Exit the function if this validation fails
     }
 
     // Display empNum2 and check if it has more than 5 digits
     document.getElementById("inputStatus").innerHTML = empNum2;
-    if (empNum2.length > 5) { // Using length to check digit count
+    else if (empNum2.length > 5) { // Using length to check digit count
         document.getElementById("inputStatus").innerHTML = "More than 5 digits: Not valid";
+        document.getElementById("inputStatus").innerHTML = "You have unlocked the secret useless code 12345";
         return;
-    }
+}
 
     
 }
