@@ -1,0 +1,42 @@
+<!-- Benjamin Posner -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- updates to ui, added the css, added navigation to all other pgs,  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input</title>
+    <script src = "strings.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+</body>
+<h1> Welcome to forms</h1>
+<form id="inputForm" onsubmit="return false">
+    String 1: <input type="text" id="initString" />
+    <br>
+    String 2: <input type="text" id="str2" />
+    <br>
+    Number 1: <input type="number" id="firstNum" />
+    <br>
+    Zip Code: <input type="number" id="secondNum" />
+    <br>
+    <input type="submit" onclick="validate()" />
+</form>
+
+<div id="inputStatus"></div>
+
+<p id = "inputStatus">Status of input values</p>
+
+    <a href="http://127.0.0.1:5500/Boards.html">
+        <button>Boards</button>
+    </a>
+    <a href="http://127.0.0.1:5500/index.html">
+        <button>Index</button>
+    </a>
+    <br>
+    <a href="http://127.0.0.1:5500/game.html">
+        <button>Heads Or Tails Game</button>
+      </a>
+</body>
+</html>
