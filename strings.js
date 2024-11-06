@@ -23,7 +23,7 @@ function validate() {
     }
 
     // Display empNum2 and check if it has more than 5 digits
-    else if (empNum2.length = 5) { // Using length to check digit count
+    else if (empNum2.length <= 5) { // Using length to check digit count
         document.getElementById("secretMessage").innerHTML = "You have unlocked the secret useless code 12345";
         return;
     }
