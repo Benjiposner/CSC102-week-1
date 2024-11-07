@@ -22,14 +22,22 @@ function validate() {
         return; // Exit the function if this validation fails
     }
 
+    
     // Display empNum2 and check if it has more than 5 digits
-    else if (empNum2.length <= 5) { // Using length to check digit count
-        document.getElementById("secretMessage").innerHTML = "You have unlocked the secret useless code 12345";
-        return;
-    }
-   // the greater than five line of code is so if it isnt valid
     else if (empNum2.length > 5 ) {
         document.getElementById("inputStatus").innerHTML = "More than 5 digits: Not valid";
         return;
     }
+    else if (empNum2.length < 5 ) {
+        document.getElementById("inputStatus").innerHTML = "less than 5 digits: Not valid";
+        return;
+    }
+    else if (empNum2.length = 5) { // Using length to check digit count
+        setTimeout(() => 
+    {
+        document.getElementById("secretMessage").innerHTML = "You have unlocked the secret useless code 12345";
+    }, 2500);
+         return;
+    }
+    
 }
