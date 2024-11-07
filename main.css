@@ -1,6 +1,6 @@
 /* Styling for body element to center the content using CSS grid layout, add background, and set overall dimensions and appearance. */
 body {
-   background-image: radial-gradient(blue, rgb(0, 255, 85), rgb(187, 210, 13)); /* Radial gradient background */
+   background-image: radial-gradient(rgb(0, 255, 85), rgb(187, 210, 13) , blue); /* Radial gradient background */
    height: 768px; /* Fixed height */
    width: 1430px; /* Fixed width */
    text-align: center; /* Centers text within body */
@@ -38,9 +38,12 @@ h1 {
 
 /* Button styling with background color, border styling, rounded corners, and fixed dimensions. */
 button {
-    background-color: rgb(217, 12, 12);
-    border-color: rgb(224, 104, 7);
-    border-radius: 50px; /* Rounded corners */
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(218, 62, 10), rgb(232, 124, 8));
+    border-color: rgb(255, 157, 0);
+    border-radius: 25px; /* Rounded corners */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
     width: 100px;
     height: 50px;
 }
@@ -55,4 +58,3 @@ button {
     text-align: center;
 }
 
-}
