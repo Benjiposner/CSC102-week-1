@@ -33,11 +33,28 @@ function validate() {
         return;
     }
     else if (empNum2.length = 5) { // Using length to check digit count
-        setTimeout(() => 
-    {
         document.getElementById("secretMessage").innerHTML = "You have unlocked the secret useless code 12345";
-    }, 2500);
          return;
     }
     
+}
+function sound(src)
+{
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.play = function()
+    {
+        this.sound.play();
+    }
+}
+
+function play()
+{
+    mySound = new sound("sounds for class/venom.mp3");
+    mySound.play();
+}
+
+function stop()
+{
+    window.location.reload();
 }
