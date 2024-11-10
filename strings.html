@@ -23,13 +23,24 @@
     <br>
     <input type="submit" onclick="validate()" />
 </form>
-
+<audio controls>
+    <source src = "sounds for class/venom.mp3" audio/ mpeg></source>
+</audio><br>
+<button onclick="play();">Play</button>
+<button onclick="stop();">Stop</button>
 <div id="secretMessage"></div>
 <div id="inputStatus"></div>
-
 <p id = "inputStatus">Status of input values</p>
 
-    <a href="http://127.0.0.1:5500/Boards.html">
+<form id="inputForm" onsubmit="return false">
+    <h3>Login and Secret Message</h3>
+    Username: <input id="username" type="text"><br>
+    Password: <input id="password" type="password"><br>
+    <input id="validate" type="submit" value="submit">
+</form>
+<p id="loginError" style="color: red;"></p>
+
+<a href="http://127.0.0.1:5500/Boards.html">
         <button>Boards</button>
     </a>
     <a href="http://127.0.0.1:5500/index.html">
@@ -38,6 +49,15 @@
     <br>
     <a href="http://127.0.0.1:5500/game.html">
         <button>Heads Or Tails Game</button>
+      </a>
+      <a href="http://127.0.0.1:5500/palindrome_strings.html">
+        <button>Plaindrome Checker</button>
+      </a><br>
+      <a href="http://127.0.0.1:5500/sound.html">
+        <button>Sound</button>
+      </a>
+      <a href="http://127.0.0.1:5500/timers.html">
+        <button>timers</button>
       </a>
 </body>
 </html>
