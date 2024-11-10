@@ -33,7 +33,8 @@ function validate() {
         return;
     }
     else if (empNum2.length = 5) { // Using length to check digit count
-        document.getElementById("secretMessage").innerHTML = "You have unlocked the secret useless code 12345";
+        document.getElementById("secretMessage").innerHTML = "Yo/u have unlocked the secret useless code 12345";
+        play();
          return;
     }
     
@@ -57,4 +58,14 @@ function play()
 function stop()
 {
     window.location.reload();
+}
+const button1 = document.getElementById("play");
+{
+    button1.style.display = "none";
+    button1.style.display = "none";
+}
+const button2 = document.getElementById("play");
+{
+    button2.style.display = "none";
+    button2.style.display = "none";
 }
