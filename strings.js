@@ -5,7 +5,9 @@ function validate()
     var lname = document.getElementById("str2").value;
     var empNum = document.getElementById("firstNum").value;
     var empNum2 = document.getElementById("secondNum").value;
-
+//jc added these
+const button1 = document.getElementById("play");
+const button2 = document.getElementById("stop");
     // Concatenate the first and last names with space in between 
     var fullName = name + " " + lname;
     document.getElementById("inputStatus").innerHTML = fullName;
@@ -34,6 +36,10 @@ function validate()
     }
     else if (empNum2.length = 5) { // Using length to check digit count
         document.getElementById("secretMessage").innerHTML = "Yo/u have unlocked the secret useless code 12345";
+        //jc added these 2 lines to turn on the buttons
+        button1.style.display = "block";
+     
+        button2.style.display= "block";
         play();
          return;
     }
@@ -53,8 +59,9 @@ function play()
 {
     const button = document.getElementById("play");
     {
-        button.style.display = "none";
-        button.style.display = "none";
+//jc b1 = play
+    //    button1.style.display = "none";
+   //     button2.style.display = "block";
     }
     mySound = new sound("sounds for class/venom.mp3");
     mySound.play();
@@ -64,8 +71,8 @@ function stop()
 {
     const button = document.getElementById("stop");
     {
-        button.style.display = "none";
-        button.style.display = "none";
+    //    button1.style.display = "block";
+     //   button2.style.display = "none";
     }
     window.location.reload();
 }
