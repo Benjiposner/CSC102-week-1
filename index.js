@@ -12,7 +12,7 @@ function intervalStart()
        
         
 
-        change +=0.5;  // change = change + 2;
+        change +=0.2;  // change = change + 2;
 
 
     },1);  // 1 ms delay until repeat
@@ -24,4 +24,9 @@ function intervalStop()
     document.getElementById("stopButton").disabled = true;
     document.getElementById("startButton").disabled = false;
     clearInterval(intervalidID);
+}
+
+function reload()
+{
+    location.reload();
 }
