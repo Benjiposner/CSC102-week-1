@@ -1,5 +1,5 @@
-function validate() {
-   
+function validate()
+ {
 //    get variables from form
     var name = document.getElementById("initString").value;
     var lname = document.getElementById("str2").value;
@@ -51,21 +51,21 @@ function sound(src)
 
 function play()
 {
+    const button = document.getElementById("play");
+    {
+        button.style.display = "none";
+        button.style.display = "none";
+    }
     mySound = new sound("sounds for class/venom.mp3");
     mySound.play();
 }
 
 function stop()
 {
+    const button = document.getElementById("stop");
+    {
+        button.style.display = "none";
+        button.style.display = "none";
+    }
     window.location.reload();
-}
-const button1 = document.getElementById("play");
-{
-    button1.style.display = "none";
-    button1.style.display = "none";
-}
-const button2 = document.getElementById("play");
-{
-    button2.style.display = "none";
-    button2.style.display = "none";
 }
