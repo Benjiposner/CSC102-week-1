@@ -14,19 +14,18 @@ nav {
     padding: 5px; /* Padding within nav */
     line-height: 30px; /* Sets spacing between lines of text */
 } 
-
+/* Meme image styling for specific dimensions and alignment. */
+#imgMeme { 
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px; /* Fixed width */
+    height: 293px; /* Fixed height */
+}
 /* Styles for footer, with centered text and alignment adjustments. */
 footer {
     text-align: center;
     margin-right: 275px;
     width: 1430px; /* Matches body width */
-}
-
-/* Meme image styling for specific dimensions and alignment. */
-#memeImage { 
-    margin-right: 0px;
-    width: 450px; /* Fixed width */
-    height: 350px; /* Fixed height */
 }
 
 /* Header (h1) styling to center-align text and set size. */
@@ -46,6 +45,7 @@ button {
     font-weight: bold;
     width: 100px;
     height: 50px;
+    border: right 700px;
 }
 
 .circle {
@@ -57,4 +57,3 @@ button {
     margin-right: auto; /*along with margin-left auto it will center the circle*/
     text-align: center;
 }
-
