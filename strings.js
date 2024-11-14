@@ -60,8 +60,8 @@ function play()
     const button = document.getElementById("play");
     {
 //jc b1 = play
-        button.style.display = "none";
-        button.style.display = "block";
+    //    button1.style.display = "none";
+   //     button2.style.display = "block";
     }
     mySound = new sound("sounds for class/venom.mp3");
     mySound.play();
@@ -71,10 +71,9 @@ function stop()
 {
     const button = document.getElementById("stop");
     {
-       button.style.display = "block";
-       button.style.display = "none";
+    //    button1.style.display = "block";
+     //   button2.style.display = "none";
     }
     window.location.reload();
 }
 
-}
