@@ -63,7 +63,7 @@ function play()
     //    button1.style.display = "none";
    //     button2.style.display = "block";
     }
-    mySound = new sound("sounds for class/venom.mp3");
+    mySound = new sound("venom.mp3");
     mySound.play();
 }
 
